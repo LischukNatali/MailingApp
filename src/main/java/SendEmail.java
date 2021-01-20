@@ -6,8 +6,8 @@ import java.util.Properties;
 
 public class SendEmail {
     public static void main(String[] args) {
-        String to = "n.d.myroshnychenko@gmail.com";
-        String from = "natalia4878@gmail.com";
+        String to = "to@gmail.com";
+        String from = "from@gmail.com";
         String host = "smtp.gmail.com";
         Properties properties = System.getProperties();
 
@@ -20,7 +20,7 @@ public class SendEmail {
         Session session = Session.getDefaultInstance(properties,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("natalia4878@gmail.com","80660504878");
+                        return new PasswordAuthentication("from@gmail.com","*********");
                     }
                 });
         try {
